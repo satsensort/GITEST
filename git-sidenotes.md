@@ -19,7 +19,7 @@ git diff master test
 # To Merge a Git Branch with Master
 
 1. git checkout -b bug-fix
-2. vi sample.md \\ Edit the file 
+2. vi sample.md #Edit the file 
 3. git status \\ on branch bug-fix
 4. git add sample.md 
 5. git commit \\ on branch bug-fix
