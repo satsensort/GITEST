@@ -12,3 +12,6 @@ git remote add <repo-name> <repo-url>
 
 git remote add origin /s/remote-repo
 
+# To See the difference between two branches (Master and Test Branch)
+
+git diff master test
