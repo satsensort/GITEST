@@ -8,6 +8,10 @@
     output:
     origin  https://github.com/satsensort/learning-k8s.git
 
+# To list all branches
+
+git branch -a 
+
 # To add new Remote Repository as Origin 
 
  git remote add #repo-name# #repo-url#
@@ -27,6 +31,7 @@
 5. git commit #on branch bug-fix
 6. git checkout master #switch to master branch from bug-fix
 7. git merge bug-fix #It would replace the contents of sample.md file from bug-fix branch to Master branch
+
 
 # Git log - To view log details of all branches on a Single Line.
 
@@ -56,4 +61,10 @@ git reset --HARD head;.
 
 git commit --no-edit to use the default commit message.
 
+# To view difference between local master and remote master
 
+git diff master origin/master
+
+# To Compare the head with upstream branch
+
+git diff @{upstream} 
