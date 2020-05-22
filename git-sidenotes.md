@@ -76,3 +76,15 @@ git pull --rebase origin master
 # To abort rebase operation
 
 git rebase --abort
+
+# To Restore Deleted Files
+
+How to restore a deleted file ?
+
+First, find the commit ID where the file was deleted: 
+
+git rev-list -n 1 HEAD -- filename
+
+Then checkout to that commit ID to get back the file using:
+
+git checkout deletingcommitid^ -- filename
