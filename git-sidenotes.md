@@ -57,7 +57,7 @@ Once the files are in the desired state, checkout either manually or by using Gi
 # To revert to previous state in middle of merge
 To revert to the previous state during the middle of a merge, and try again, use the command: 
 
-git reset --HARD head;.
+git reset --HARD <commit-hash> head;.
 
 git commit --no-edit to use the default commit message.
 
@@ -137,7 +137,7 @@ $ git reset --hard
 It combines both git reset and git checkout in a single command. The result will be that the files removed from the staging area and the working directory are returned to the state of the last commit. 
 
 
-$ git reset --hard <commit-hash>  OR HEAD
+$ git reset --hard ((commit-hash))  OR HEAD
 
 The command allows you to go back to any commit state. HEAD is an alias for the last commit-hash of the branch.
 Using HEAD will clear the state back to the last commit.
