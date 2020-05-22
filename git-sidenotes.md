@@ -27,3 +27,14 @@
 5. git commit #on branch bug-fix
 6. git checkout master #switch to master branch from bug-fix
 7. git merge bug-fix #It would replace the contents of sample.md file from bug-fix branch to Master branch
+
+# Git log - To view log details of all branches on a Single Line.
+
+git log --all --decorate --oneline
+
+# Fixing Git Conflicts between local and remote repositories
+
+The simplest way to fix a conflict is to pick either the local or remote version by using 
+git checkout --theirs Quotes.txt or git checkout --ours Quotes.txt. 
+If you need more control, manually edit the file(s) like normal.
+Once the files are in the desired state, checkout either manually or by using Git. Stage and commit the changes. When committing, a default commit message is created with details of the merge and the conflicted files.
