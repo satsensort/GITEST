@@ -68,3 +68,11 @@ git diff master origin/master
 # To Compare the head with upstream branch
 
 git diff @{upstream} 
+
+# To Rebase the local master to remote master branch 
+
+git pull --rebase origin master
+
+# To abort rebase operation
+
+git rebase --abort
