@@ -30,7 +30,7 @@
 
 # Git log - To view log details of all branches on a Single Line.
 
-git log --all --decorate --oneline
+git log --decorate --oneline --graph --all
 
 # Fixing Git Conflicts between local and remote repositories
 
