@@ -116,9 +116,46 @@ git checkout <commit>: Switches the HEAD to the provided commit
 
 # To view changes between working tree and last commit 
 
-git diff HEAD
+$ git diff HEAD
+
+OR
+
+$ git diff --cached
 
 # To clear the changes made in the working directory
 
 $ git checkout filename
 
+# To Move files from staging area back to working directory
+
+$ git reset filename OR use . (for all files) OR list files separated by spaces
+
+# Git reset hard 
+
+$ git reset --hard  
+
+It combines both git reset and git checkout in a single command. The result will be that the files removed from the staging area and the working directory are returned to the state of the last commit. 
+
+
+$ git reset --hard <commit-hash>  OR HEAD
+
+The command allows you to go back to any commit state. HEAD is an alias for the last commit-hash of the branch.
+Using HEAD will clear the state back to the last commit.
+
+# Git Revert
+
+$ git revert 
+
+It is used to undo the commits. It will create a new commit which has the inverse effect of the commit being reverted. If you have not pushed any changes the below command will remove the last commit.
+
+$ git reset HEAD~1
+
+# To view changes made in last commit 
+
+$ git show HEAD.
+
+# To reverse the changes made in last commit 
+
+$ git revert HEAD
+
+You can also add a --no-edit flag to use the selected commit message without launching an editor.
