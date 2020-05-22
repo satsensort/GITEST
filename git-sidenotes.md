@@ -88,3 +88,17 @@ git rev-list -n 1 HEAD -- filename
 Then checkout to that commit ID to get back the file using:
 
 git checkout deletingcommitid^ -- filename
+
+# Git Cheat Sheet 
+
+git revert <commit>: Creates a new commit that undoes all changes made in the commit and applies it to the current branch
+
+git reset <file>: Moves file changes from staging area to working directory.
+
+git reset <commit>: Moves current branch's HEAD tip to the old <commit>. All the changes in the commits (that you skipped to move to the old commit) are moved to the working area.
+
+git commit --amend: Adds staged changes to the last commit and allows for editing the old commit message
+
+git rm --cached(file_name): Untracks the current file
+
+git checkout <commit>: Switches the HEAD to the provided commit
