@@ -79,7 +79,7 @@ git rebase --abort
 
 # To Restore Deleted Files
 
-How to restore a deleted file ?
+# How to restore a deleted file ?
 
 First, find the commit ID where the file was deleted: 
 
@@ -102,3 +102,23 @@ git commit --amend: Adds staged changes to the last commit and allows for editin
 git rm --cached(file_name): Untracks the current file
 
 git checkout <commit>: Switches the HEAD to the provided commit
+
+## To Add a new file or edit the file to the previous commit 
+
+# If editing an existing file, perform the changes to that file using VIM and then perform git add
+
+ git add new-file OR old-file
+ git commit --amend -m "new commit message" 
+
+  OR 
+ 
+ git commit --amend --no-edit
+
+# To view changes between working tree and last commit 
+
+git diff HEAD
+
+# To clear the changes made in the working directory
+
+$ git checkout filename
+
