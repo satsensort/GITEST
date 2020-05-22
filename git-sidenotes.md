@@ -35,12 +35,16 @@ git log --decorate --oneline --graph --all
 # Fixing Git Conflicts between local and remote repositories
 
 The simplest way to fix a conflict is to pick either the local or remote version by using 
-
+ 
  git checkout --theirs Quotes.txt 
  
  OR
  
  git checkout --ours Quotes.txt
+  
+ OR 
+
+ git mergetool
 
 If you need more control, manually edit the file(s) like normal.
 Once the files are in the desired state, checkout either manually or by using Git. Stage and commit the changes. When committing, a default commit message is created with details of the merge and the conflicted files.
