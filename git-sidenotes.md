@@ -37,7 +37,9 @@ git log --all --decorate --oneline
 The simplest way to fix a conflict is to pick either the local or remote version by using 
 
  git checkout --theirs Quotes.txt 
- OR 
+ 
+ OR
+ 
  git checkout --ours Quotes.txt
 
 If you need more control, manually edit the file(s) like normal.
